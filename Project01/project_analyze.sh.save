@@ -1,0 +1,11 @@
+#!/bin/bash
+for file in /home/zhangr75/;do
+	html=$(find $file -name "*.html" |wc -l)
+	echo "HTML file: " $html>
+	javascript=$(find $file -name "*.js" |wc -l)
+        echo "Javascript file: " $javascript
+	html=$(find $file -name "*.html" |wc -l)
+        echo "HTML file: " $html>count.txt
+	html=$(find $file -name "*.html" |wc -l)
+        echo "HTML file: " $html>count.txt
+done
