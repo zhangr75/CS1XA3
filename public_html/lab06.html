@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+ 
+.firstblock
+{
+    margin:0 ;
+    padding:0;
+    display:inline-block;
+ }
+ 
+.secondblock
+{
+    margin:0;
+    padding:0;
+    display:inline-block;
+}
+</style>
+</head>
+<body>
+
+<div>
+<input placeholder="String 1" id = "inputA"><input placeholder="String 2" id = "inputB" ></br>
+<div id = "first" class="firstblock"></div> : <div id = "second" class="secondblock"></div>
+</div>
+
+<script>
+
+document.getElementById("inputA").addEventListener("keydown", key);
+document.getElementById("inputB").addEventListener("keydown", key);
+function key() { 
+	var inputA = document.getElementById("inputA").value;
+	var inputB = document.getElementById("inputB").value;
+	document.getElementById("first").innerHTML = inputA;
+	document.getElementById("second").innerHTML = inputB;
+}
+
+</script>
+
+</body>
+</html>
+
+
