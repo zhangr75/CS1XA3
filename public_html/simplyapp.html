@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+<head>
+    <!-- Author: Run Zhang-->
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/part3.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/part3.js"></script>
+<head>
+    
+<body>
+    <div class="interface">
+        <h1>Simple Calculator</h1>
+        <input type="text" id="textbox" /></br>
+        <input type="text" id="result" placeholder="result" readonly />
+        <div class="row1">
+            <button type="button" class="btn btn-outline-light text-dark" id="b1" onclick="key('1')">1</button>
+            <button type="button" class="btn btn-outline-light text-dark" id="b2"onclick="key('2')">2</button>
+            <button type="button" class="btn btn-outline-light text-dark" id="b3" onclick="key('3')">3</button>
+            <button type="button" class="btn btn-outline-primary" id="badd" onclick="key('+')">+</button>
+        </div>
+        <div class="row2">
+            <button type="button" class="btn btn-outline-light text-dark" id="b4" onclick="key('4')">4</button>
+            <button type="button" class="btn btn-outline-light text-dark" id="b5" onclick="key('5')">5</button>
+            <button type="button" class="btn btn-outline-light text-dark" id="b6" onclick="key('6')">6</button>
+            <button type="button" class="btn btn-outline-primary" id="bmin" onclick="key('-')">-</button>
+        </div>
+        <div class="row3">
+            <button type="button" class="btn btn-outline-light text-dark" id='b7' onclick="key('7')">7</button>
+            <button type="button" class="btn btn-outline-light text-dark" id='b8' onclick="key('8')">8</button>
+            <button type="button" class="btn btn-outline-light text-dark" id='b9' onclick="key('9')">9</button>
+            <button type="button" class="btn btn-outline-primary" id="bmul" onclick="key('*')">x</button>
+        </div>
+        <div class="row4">
+            <button type="button" class="btn btn-outline-primary" id='Clear' onclick="clean()">C</button>
+            <button type="button" class="btn btn-outline-light text-dark" id='b0' onclick="key('0')">0</button>
+            <button type="button" class="btn btn-outline-primary" id='bres' onclick="valid()">=</button>
+            <button type="button" class="btn btn-outline-primary" id='bdi' onclick="key('/')">/</button>
+        </div>
+        <div class="equation">
+            <input type="text" class="value" placeholder="a" id="a"/>
+            <p class="value">x^2+</p>
+            <input type="text" class="value" placeholder="b" id="b"/>
+            <p class="value">x+</p>
+            <input type="text" class="value" placeholder="c" id="c"/>
+            <button type="button" class="btn btn-outline-light text-dark" id="solve" onclick="solve()">solve</button>
+        </div>    
+        <footer>Author: Run Zhang</footer>
+    </div>
+</body> 
+    
+</html>
