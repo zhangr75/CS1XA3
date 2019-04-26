@@ -3,13 +3,10 @@ from django.urls import path
 
 from django.http import HttpResponse
 
-def post_vars(request):
-  name = request.POST.get("name","")
-  age = request.POST.get("age","")
+def hello_world(request):
+    html = "<html><body>Hello World</body></html>"
+    return HttpResponse(html)
 
-  html = "<html><body>" + name + " " + age + "</body></html>"
-  return HttpResponse(html)
-
-urlpatterns = [ 
-    path("e/zhangr75/lab7/" , post_vars) ,
+urlpatterns = [
+    path('e/[zhangr75]/' , hello_world) ,
 ]
